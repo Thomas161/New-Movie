@@ -1,0 +1,40 @@
+.grid-container {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+  grid-gap: 50px;
+  align-items: end;
+  padding: 4em;
+  width: 85%;
+  margin: 60px;
+  background-color: blueviolet;
+  border-radius: 20px;
+}
+.a {
+  border: 2px solid rgba(27, 24, 24, 0.568);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+  max-width: 70%;
+  height: 15%;
+  align-self: relative;
+  padding: 0.3em;
+  background-color: darkorange;
+}
+.b {
+  border: 2px solid rgba(27, 24, 24, 0.568);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 1);
+  max-width: 100%;
+  background-color: yellow;
+  align-self: baseline;
+}
+.c {
+  border: 2px solid rgba(27, 24, 24, 0.568);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+  max-width: 28%;
+ align-self: inherit;
+  background-color: white;
+  padding: 0.5em;
+}
+.d {
+  border: 2px solid rgba(27, 24, 24, 0.568);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+  max-width: 100%;
+}
