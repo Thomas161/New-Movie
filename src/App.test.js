@@ -25,16 +25,14 @@ describe('First 3 components render',()=> {
     let wrapper = shallow(<SearchMovie/>)
    expect(wrapper).toBeDefined();
   });
-})
-describe('last 3 components render',()=> {
+});
+
+describe('other components render',()=> {
     it('Review',()=> {
     render(<Review/>);
   });
 it('Navbar', () => {
   render(<Navbar />);
-});
-it('MovieCard', () => {
-  render(<MovieCard />);
 });
 })
 
