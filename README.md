@@ -1,5 +1,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+New-Movie was a creative project created using:
+
+ Reactjs
+ Firebase DB cloud platform
+ Jest Testing
+ Integration Testing
+ Cloud Deployment using Heroku
+ 
+It consumes an API via the themoviedatabase that allows the user to query movies, and thus rendering movie information to the frontend from the backend.
+ 
+ It also submits a movie review via user data inserted via a form that is sent to a backend database (firebase).
+ 
+
 ## Available Scripts
 
 In the project directory, you can run:
