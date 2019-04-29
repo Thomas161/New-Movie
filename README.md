@@ -59,10 +59,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ma
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
+### Testing/Build
+
+Testing achieved via React Scripts (Create React App) and Continuous integration completed using CircleCI build tool
+
 ### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Using Heroku cloud platform, i was able to deploy: https://movie-app2015.herokuapp.com/
+
 
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
