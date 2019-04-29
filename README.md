@@ -1,6 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-New-Movie was a creative project created using:
+New-Movie
+
+Built with:
 
  Reactjs
  Firebase DB cloud platform
