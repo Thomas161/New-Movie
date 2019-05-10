@@ -1,12 +1,10 @@
-
-
 [![NPM](https://nodei.co/npm/npm.png)](https://nodei.co/npm/npm/)
 
 # New-Movie
 
 Built with:
 
-  Reactjs
+ Reactjs
  
  Firebase DB cloud platform
  
@@ -18,11 +16,8 @@ Built with:
  
 It consumes an API via the themoviedatabase that allows the user to query movies, and thus rendering movie information to the frontend from the backend.
 
-
+It also submits a movie review via user data inserted via a form that is sent to a backend database (firebase).
  
- It also submits a movie review via user data inserted via a form that is sent to a backend database (firebase).
- 
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -46,12 +41,12 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 API data provided via themoviedatabase, accessed through a key
 https://www.themoviedb.org/
 
-### Backend
+## Backend
 
 Database used for project uses the cloud platform Firebase
 https://console.firebase.google.com/
 
-## server.js config file
+### server.js config file
 
 ```python
 
@@ -71,12 +66,18 @@ export default fire;
 
 ```
 
-### Testing/Build
+## Testing/Build
 
 Testing achieved via React Scripts (create react app) and Continuous integration completed using CircleCI build tool.
 https://circleci.com/
 
-### Deployment
+
+### build script
+```python
+
+```
+
+## Deployment
 
 Using Heroku cloud platform, i was able to deploy: https://movie-app2015.herokuapp.com/
 
