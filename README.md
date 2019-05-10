@@ -4,15 +4,15 @@
 
 Built with:
 
- Reactjs
+ ### Reactjs
  
- Firebase DB cloud platform
+ ### Firebase DB cloud platform
  
- Jest Testing
+ ### Jest Testing
  
- Integration Testing
+ ### Integration Testing
  
- Cloud Deployment using Heroku
+ ### Heroku deployment
  
 It consumes an API via the themoviedatabase that allows the user to query movies, and thus rendering movie information to the frontend from the backend.
 
