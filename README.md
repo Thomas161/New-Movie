@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 [![NPM](https://nodei.co/npm/npm.png)](https://nodei.co/npm/npm/)
 
