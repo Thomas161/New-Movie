@@ -51,6 +51,26 @@ https://www.themoviedb.org/
 Database used for project uses the cloud platform Firebase
 https://console.firebase.google.com/
 
+## server.js config file
+
+```python
+
+import firebase from "firebase";
+
+const config = {
+  apiKey: "AIzaSyDBBH7eOJ2JmlwpSf86s3q8UWkEIzipujw",
+  authDomain: "moviedb-a465c.firebaseapp.com",
+  databaseURL: "https://moviedb-a465c.firebaseio.com",
+  projectId: "moviedb-a465c",
+  storageBucket: "moviedb-a465c.appspot.com",
+  messagingSenderId: "41769656374"
+};
+const fire = firebase.initializeApp(config);
+
+export default fire;
+
+```
+
 ### Testing/Build
 
 Testing achieved via React Scripts (create react app) and Continuous integration completed using CircleCI build tool.
