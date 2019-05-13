@@ -1,5 +1,6 @@
 [![NPM](https://nodei.co/npm/npm.png)](https://nodei.co/npm/npm/)
 
+[![CircleCI](https://circleci.com/gh/Thomas161/New-Movie/tree/prime.svg?style=svg)](https://circleci.com/gh/Thomas161/New-Movie/tree/prime)
 # New-Movie
 
 Built with:
