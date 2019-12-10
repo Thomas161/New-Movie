@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import MovieCard from "./MovieCard";
 import ls from "local-storage";
-import { Link } from "react-router-dom";
+import { Link, Router } from "react-router-dom";
 import fire from "../backend/fire";
 import "../css/Review.css";
 
@@ -63,53 +63,55 @@ class Review extends Component {
     const { publisher, body, submitted } = this.state;
 
     return (
-      <>
-        <div>
-          <br />
-          <form onSubmit={this.handleSubmit}>
-            <div className="form-group has-error has-feedback">
-              <input
-                className="form-control"
-                type="text"
-                placeholder="Title"
-                name="publisher"
-                onChange={this.handleChange}
-              />
-              <br />
-              <input
-                className="form-control"
-                type="text"
-                placeholder="Review..."
-                name="body"
-                onChange={this.handleChange}
-              />
-              <br />
-              <span>
+      <Router>
+        <>
+          <div>
+            <br />
+            <form onSubmit={this.handleSubmit}>
+              <div className="form-group has-error has-feedback">
                 <input
-                  type="submit"
-                  className="btn btn-warning"
-                  value="Submit"
-                  disabled={!this.isFilled()}
+                  className="form-control"
+                  type="text"
+                  placeholder="Title"
+                  name="publisher"
+                  onChange={this.handleChange}
                 />
+                <br />
+                <input
+                  className="form-control"
+                  type="text"
+                  placeholder="Review..."
+                  name="body"
+                  onChange={this.handleChange}
+                />
+                <br />
+                <span>
+                  <input
+                    type="submit"
+                    className="btn btn-warning"
+                    value="Submit"
+                    disabled={!this.isFilled()}
+                  />
 
-                <Link
-                  to="/"
-                  alt="home"
-                  style={{
-                    fontSize: "2em",
-                    fontWeight: "bolder",
-                    backgroundColor: "white",
-                    padding: "20px"
-                  }}
-                >
-                  RETURN TO HOME
-                </Link>
-              </span>
-            </div>
-          </form>
-        </div>
-        {submitted && <MovieCard publisher={publisher} body={body} />}
-      </>
+                  <Link
+                    to="/"
+                    alt="home"
+                    style={{
+                      fontSize: "2em",
+                      fontWeight: "bolder",
+                      backgroundColor: "white",
+                      padding: "20px"
+                    }}
+                  >
+                    RETURN TO HOME
+                  </Link>
+                </span>
+              </div>
+            </form>
+          </div>
+          {submitted && <MovieCard publisher={publisher} body={body} />}
+        </>
+      </Router>
     );
   }
 }
