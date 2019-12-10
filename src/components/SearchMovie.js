@@ -1,16 +1,16 @@
 import React from "react";
-import "../css/SearchMovie.css";
+import styles from "../css/SearchMovie.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const SearchMovie = props => {
+const SearchMovie = ({ movie, syn, vote, poster }) => {
   return (
     <div className="grid-container">
-      <h2 className="a">{props.movie}</h2>
-      <p className="b">{props.syn}</p>
-      <p className="c">{props.vote} </p>
+      <h2 className={styles.a}>{movie}</h2>
+      <p className={styles.b}>{syn}</p>
+      <p className={styles.c}>{vote} </p>
       <img
-        className="d"
-        src={`https://image.tmdb.org/t/p/w300/${props.poster}`}
+        className={styles.d}
+        src={`https://image.tmdb.org/t/p/w300/${poster}`}
         alt=""
       />
     </div>

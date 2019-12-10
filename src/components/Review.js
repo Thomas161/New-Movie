@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import MovieCard from "./MovieCard";
 import ls from "local-storage";
+import { Link } from "react-router-dom";
 import fire from "../backend/fire";
 import "../css/Review.css";
-
 
 class Review extends Component {
   constructor(props) {
@@ -12,8 +12,8 @@ class Review extends Component {
       publisher: "",
       body: "",
       submitted: false
-    }
-}
+    };
+  }
 
   componentWillMount() {
     //creates a variable with a database collection i.e. ('newReviews');
@@ -25,16 +25,14 @@ class Review extends Component {
 
   handleChange = event => {
     event.preventDefault();
-    this.setState(
-      {
-        [event.target.name]: event.target.value
-      }
-    );
+    this.setState({
+      [event.target.name]: event.target.value
+    });
   };
 
   isFilled = () => {
     return this.state.body !== "" && this.state.publisher !== "";
-  }
+  };
 
   handleSubmit = event => {
     event.preventDefault();
@@ -42,8 +40,8 @@ class Review extends Component {
       publisher: this.state.publisher,
       body: this.state.body,
       submitted: true
-});
-    
+    });
+
     //set key and value pairs into localstorage
     ls.set("publisher", JSON.stringify(this.state.publisher));
     ls.set("body", JSON.stringify(this.state.body));
@@ -84,17 +82,29 @@ class Review extends Component {
                 placeholder="Review..."
                 name="body"
                 onChange={this.handleChange}
-                style={{ width: "60%", height: "150px", bottom: "20px" }}
               />
               <br />
-            <input
-              type="submit"
-              className="btn btn-info"
-              value="Submit"
-              disabled={!this.isFilled()}
-              style={{ fontSize: "2em", position: "right" }}
-            />
-              <br />
+              <span>
+                <input
+                  type="submit"
+                  className="btn btn-warning"
+                  value="Submit"
+                  disabled={!this.isFilled()}
+                />
+
+                <Link
+                  to="/"
+                  alt="home"
+                  style={{
+                    fontSize: "2em",
+                    fontWeight: "bolder",
+                    backgroundColor: "white",
+                    padding: "20px"
+                  }}
+                >
+                  RETURN TO HOME
+                </Link>
+              </span>
             </div>
           </form>
         </div>

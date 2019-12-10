@@ -61,10 +61,10 @@ class Search extends Component {
               type="text"
               onChange={this.handleChange}
             />
-
+            <br />
             <input
               type="submit"
-              className="btn btn-primary"
+              className="btn btn-dark"
               value="Search Movie"
             />
           </form>

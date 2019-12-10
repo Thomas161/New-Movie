@@ -1,28 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/MovieCard.css";
 
-const MovieCard = props => {
+const MovieCard = ({ publisher, body }) => {
   return (
     <div>
-      <div className="card">
-        <div className="card-body">
-          <h3 className="card-title">{props.publisher} </h3>
+      <div className="jumbotron jumbotron-fluid">
+        <div className="container">
+          <h3 className="display-4">{publisher} </h3>
           {"  "}
           {Date(Date.now()).toString()}
           <hr />
-          <p className="card-text">{props.body}</p>
+          <p className="lead">{body}</p>
         </div>
       </div>
       <br />
-      <br />
-      <br />
-
-      <Link to="/" alt="home" style={{ fontSize: "2em", fontWeight:'bolder', backgroundColor: 'white' ,padding: "20px" }}>
-        RETURN TO HOME
-      </Link>
-  
     </div>
   );
 };

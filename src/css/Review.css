@@ -1,6 +1,10 @@
-.btn-info {
-   padding-right: 5%;
-   position: relative;
-   left: 3em
-   
+input[type="text"] {
+  width: "60%";
+  height: "150px";
+  bottom: "20px";
+  border: solid green 5px;
+}
+input[type="submit"] {
+  font-size: "3em";
+  margin-left: 4%;
 }
