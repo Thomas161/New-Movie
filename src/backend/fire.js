@@ -1,7 +1,8 @@
 import firebase from "firebase";
+import { FIRE_KEY } from "../environment/config";
 
 const config = {
-  apiKey: "AIzaSyDBBH7eOJ2JmlwpSf86s3q8UWkEIzipujw",
+  apiKey: FIRE_KEY,
   authDomain: "moviedb-a465c.firebaseapp.com",
   databaseURL: "https://moviedb-a465c.firebaseio.com",
   projectId: "moviedb-a465c",
