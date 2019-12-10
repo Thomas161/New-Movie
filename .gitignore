@@ -25,5 +25,5 @@ yarn-error.log*
 # env
 .env
 
-/environment 
+/src/environment 
 
