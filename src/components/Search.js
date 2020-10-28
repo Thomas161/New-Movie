@@ -3,7 +3,6 @@ import Navbar from "./Navbar";
 import SearchMovie from "./SearchMovie";
 import "../css/Search.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { API_KEY } from "../environment/config";
 
 class Search extends Component {
   constructor(props) {
@@ -14,38 +13,38 @@ class Search extends Component {
       syn: [],
       vote: [],
       poster: [],
-      searchTerms: ""
+      searchTerms: "",
     };
   }
 
   //handleSubmit()
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
-    const key = API_KEY;
+    const key = process.env.API_KEY;
     fetch(
       `https://api.themoviedb.org/3/search/movie?api_key=${key}&query=${this.state.searchTerms}`
     )
-      .then(data => data.json())
-      .then(data => {
+      .then((data) => data.json())
+      .then((data) => {
         // console.log(data);
         this.setState({
           movie: data.results[0].original_title,
           syn: data.results[0].overview,
           vote: data.results[0].vote_average,
           poster: data.results[0].poster_path,
-          submitted: true
+          submitted: true,
         });
       })
-      .catch(error => {
+      .catch((error) => {
         console.error("Error message ", error);
       });
   };
 
   //handleChange()
-  handleChange = e => {
+  handleChange = (e) => {
     e.preventDefault();
     this.setState({
-      searchTerms: e.target.value
+      searchTerms: e.target.value,
     });
   };
 
