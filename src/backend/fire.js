@@ -1,6 +1,6 @@
 import firebase from "firebase";
 
-const FIRE_KEY = process.env.FIRE_KEY;
+const FIRE_KEY = process.env.REACT_APP_FIRE_KEY;
 const config = {
   apiKey: FIRE_KEY,
   authDomain: "moviedb-a465c.firebaseapp.com",

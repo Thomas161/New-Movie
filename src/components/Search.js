@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import SearchMovie from "./SearchMovie";
 import "../css/Search.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+require("dotenv").config();
 
 class Search extends Component {
   constructor(props) {
@@ -18,11 +19,11 @@ class Search extends Component {
   }
 
   //handleSubmit()
-  handleSubmit = (e) => {
+  handleSubmit = async (e) => {
     e.preventDefault();
-    const key = process.env.API_KEY;
-    fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=${key}&query=${this.state.searchTerms}`
+    const key = process.env.REACT_APP_API_KEY;
+    await fetch(
+      `https://api.themoviedb.org/3/search/movie?api_key=${key}&language=en-US&query=${this.state.searchTerms}`
     )
       .then((data) => data.json())
       .then((data) => {
@@ -34,6 +35,7 @@ class Search extends Component {
           poster: data.results[0].poster_path,
           submitted: true,
         });
+        // console.log(`https://api.themoviedb.org/3/search/movie`);
       })
       .catch((error) => {
         console.error("Error message ", error);
