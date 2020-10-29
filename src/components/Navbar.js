@@ -10,15 +10,15 @@ const Navbar = () => {
       <div>
         <nav className="nav navbar-default bg-dark">
           <ul>
-            <li>
-              <a href="https://www.themoviedb.org/">
-                <img src={moviedb} alt="the movie db" />
+            <li id="listItemMovieDb">
+              <a href="https://www.themoviedb.org/" id="theMovieDbLink">
+                <img src={moviedb} alt="the_movie_db" id="theMovieDbImage" />
               </a>
             </li>
-            <hr />
+
             <li>
               <Link to="/review">
-                <h2>Wanna Write a Review?</h2>
+                <h2 id="reviewHeader">Wanna Write a Review?</h2>
               </Link>
             </li>
           </ul>
