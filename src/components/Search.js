@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Navbar from "./Navbar";
 import SearchMovie from "./SearchMovie";
 import "../css/Search.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -59,7 +58,6 @@ class Search extends Component {
     const { movie, syn, vote, poster, submitted, releaseDate } = this.state;
     return (
       <>
-        <Navbar />
         <div id="formContainer">
           <form action="" onSubmit={this.handleSubmit}>
             <input
