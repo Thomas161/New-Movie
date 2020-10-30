@@ -1,14 +1,15 @@
 [![NPM](https://nodei.co/npm/npm.png)](https://nodei.co/npm/npm/)
 
 [![CircleCI](https://circleci.com/gh/Thomas161/New-Movie/tree/prime.svg?style=svg)](https://circleci.com/gh/Thomas161/New-Movie/tree/prime)
+
 # New-Movie
 
- **Reactjs/Firebase DB cloud platform/Jest Testing/Integration Testing/Heroku deployment**
- 
+**Reactjs/Firebase DB cloud platform/Jest Testing/Integration Testing/Heroku deployment**
+
 It consumes an API via the themoviedatabase that allows the user to query movies, and thus rendering movie information to the frontend from the backend.
 
 It also submits a movie review via user data inserted via a form that is sent to a backend database (firebase).
- 
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -29,6 +30,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 ## Tools and Attributions
 
 ### TheMovieDatabase
+
 API data provided via themoviedatabase, accessed through a key
 https://www.themoviedb.org/
 
@@ -37,14 +39,13 @@ https://www.themoviedb.org/
 Database used for project uses the cloud platform Firebase
 https://console.firebase.google.com/
 
-
 ## Testing/Build
 
 Testing achieved via React Scripts (create react app) and Continuous integration completed using CircleCI build tool.
 https://circleci.com/
 
-
 ### config.yml
+
 ```python
 version: 2
 jobs:
@@ -69,15 +70,7 @@ jobs:
             - ./node_modules
       - run: # run tests
           name: Run Test and Coverage
-          command: 
+          command:
             npm test -- --coverage
-         
+
 ```
-
-## Deployment
-
-Using Heroku cloud platform, i was able to deploy: https://movie-app2015.herokuapp.com/
-
-
-
-

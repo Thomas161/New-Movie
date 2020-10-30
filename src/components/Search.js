@@ -55,7 +55,7 @@ class Search extends Component {
     return (
       <>
         <Navbar />
-        <div>
+        <div id="formContainer">
           <form action="" onSubmit={this.handleSubmit}>
             <input
               placeholder="Select Movie..."
@@ -69,8 +69,6 @@ class Search extends Component {
               value="Search Movie"
             />
           </form>
-          <br />
-          <br />
         </div>
         {submitted && (
           <SearchMovie movie={movie} syn={syn} vote={vote} poster={poster} />

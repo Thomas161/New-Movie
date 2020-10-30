@@ -1,21 +1,22 @@
-input[type="text"] {
-  width: 20%;
-  height: 60px;
+#formContainer {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: bisque;
-  color: #808080;
-  font-weight: bolder;
+  box-shadow: 40px -16px teal;
+  border-radius: 12px;
+}
+input[type="text"] {
+  width: 200px;
+  height: 40px;
+
+  font-weight: lighter;
   position: relative;
-  left: 60px;
-  padding: 10px;
-  font-size: 2em;
+  left: 0px;
 }
 
 .btn-dark {
-  height: 60px;
-
-  top: 10%;
-  padding: 5px;
-  margin: 70px;
-  font-size: 2em;
-  position: right;
+  height: 40px;
+  width: 120px;
 }
