@@ -17,10 +17,11 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/review">
-                <h2 id="reviewHeader">Wanna Write a Review?</h2>
+                <div id="reviewHeader">Wanna Write a Review?</div>
               </Link>
             </li>
           </ul>
+          <div id="movieSearchApp">Movie Search App</div>
         </nav>
         <Switch>
           <Route path="/review" component={Review} />
