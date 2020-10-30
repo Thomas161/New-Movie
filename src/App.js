@@ -14,7 +14,7 @@ class App extends Component {
             <Navbar />
             <Switch>
               <Route exact path="/search" component={Search} />
-              <Route path="/review" component={Review} />
+              <Route exact path="/review" component={Review} />
             </Switch>
           </div>
         </Router>

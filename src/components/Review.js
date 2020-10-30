@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import MovieCard from "./MovieCard";
 import ls from "local-storage";
-import { Link, BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import fire from "../backend/fire";
 import "../css/Review.css";
 // import Search from "./Search";

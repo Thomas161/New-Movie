@@ -32,7 +32,7 @@ const Navbar = () => {
         </nav>
         <Switch>
           <Route component={Search} exact path="/search" />
-          <Route exact path="/review" component={Review} />
+          <Route component={Review} exact path="/review" />
         </Switch>
       </div>
     </Router>

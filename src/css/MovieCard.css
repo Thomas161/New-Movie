@@ -1,23 +1,15 @@
-textarea {
-  left: 90%;
-  margin: 5%;
-  height: 290px;
-  width: 80%;
-}
-input {
-  margin: 10px;
-}
-.card {
-  width: 40rem;
-  height: 200px;
-  left: 10%;
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: springgreen;
 }
 
 p {
-  color: black;
-  font-size: 2em;
+  color: rgb(201, 182, 182);
 }
 
-h3 {
-  font-weight: bold;
+h5 {
+  font-size: 16px;
 }
