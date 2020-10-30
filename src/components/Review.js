@@ -53,24 +53,15 @@ class Review extends Component {
     console.log("Submitted to firebase", this.state.publisher, this.state.body);
   };
 
-  // hideComp = e => {
-  //   e.preventDefault();
-  //   this.setState({
-  //     hideComp:true
-  //   })
-  // }
-
   render() {
     const { publisher, body, submitted } = this.state;
 
     return (
       <Router>
-        {/* <Search style="display:none" /> */}
         <>
-          <div>
-            <br />
-            <form onSubmit={this.handleSubmit}>
-              <div className="form-group has-error has-feedback">
+          <div id="formContainerReview">
+            <form onSubmit={this.handleSubmit} id="formControl">
+              <div id="innerForm">
                 <input
                   className="form-control"
                   type="text"
@@ -78,15 +69,13 @@ class Review extends Component {
                   name="publisher"
                   onChange={this.handleChange}
                 />
-                <br />
-                <input
-                  className="form-control"
-                  type="text"
+
+                <textarea
                   placeholder="Review..."
                   name="body"
                   onChange={this.handleChange}
-                />
-                <br />
+                ></textarea>
+
                 <span>
                   <input
                     type="submit"
@@ -94,26 +83,26 @@ class Review extends Component {
                     value="Submit"
                     disabled={!this.isFilled()}
                   />
-                  <br />
-
-                  <Link
-                    to={{ pathname: "/" }}
-                    alt="home"
-                    style={{
-                      fontSize: "12px",
-                      fontWeight: "lighter",
-                      backgroundColor: "#4c9f93",
-                      padding: "5px",
-                      border: "solid 3px red",
-                      color: "white",
-                    }}
-                  >
-                    RETURN TO HOME
-                  </Link>
                 </span>
               </div>
             </form>
           </div>
+
+          {/* <Link
+            to={{ pathname: "/" }}
+            alt="home"
+            style={{
+              fontSize: "12px",
+              fontWeight: "lighter",
+              backgroundColor: "#4c9f93",
+              padding: "5px",
+              border: "solid 3px red",
+              color: "white",
+            }}
+          >
+            RETURN TO HOME
+          </Link> */}
+
           {submitted && <MovieCard publisher={publisher} body={body} />}
         </>
       </Router>

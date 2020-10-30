@@ -1,10 +1,48 @@
+#formContainerReview {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background: cornflowerblue;
+  width: 650px;
+  height: 400px;
+}
+#innerForm {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 650px;
+  height: 400px;
+}
+/* #formControl {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 650px;
+  height: 400px;
+} */
 input[type="text"] {
-  width: "60%";
-  height: "150px";
-  bottom: "20px";
-  border: solid green 5px;
+  position: relative;
+  width: 80%;
+  height: 30px;
+
+  border: solid slategray 3px;
+}
+textarea {
+  position: relative;
+  width: 80%;
+  height: 200px;
+  left: 0px;
+  margin: 2%;
+  border: solid slategray 3px;
 }
 input[type="submit"] {
-  font-size: "3em";
-  margin-left: 4%;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  left: 5px;
+  text-align: center;
+  border: solid slategray 3px;
 }
