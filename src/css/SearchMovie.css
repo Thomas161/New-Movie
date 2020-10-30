@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Barrio");
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px 200px;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "footer title "
+    "synopsis  synopsis "
+    "rating release ";
+  grid-gap: 3px;
+  width: 100%;
+  height: 100%;
+  left: 40%;
+  top: 50%;
+  transform: translate(150px, 280px);
+  background: linear-gradient(#f3904f, 3b4371);
+}
+#title {
+  font-size: 16px;
+  text-align: center;
+  grid-area: title;
+  background-color: darkorange;
+  font-family: "Barrio", cursive;
+  height: 60px;
+  top: 20px;
+}
+#synopsis {
+  font-size: 12px;
+  grid-area: synopsis;
+  background-color: yellow;
+  padding: 10px;
+  font-family: "Barrio", cursive;
+}
+#rating {
+  font-family: "Barrio", cursive;
+  font-size: 14px;
+  text-align: center;
+  grid-area: rating;
+  background-color: white;
+  top: 25px;
+  width: 40px;
+}
+#poster {
+  grid-area: footer;
+}
+#releaseDate {
+  grid-area: release;
+  font-family: "Barrio", cursive;
+  font-size: 14px;
+  background-color: powderblue;
+  text-align: center;
+}

@@ -14,6 +14,7 @@ class Search extends Component {
       syn: [],
       vote: [],
       poster: [],
+      releaseDate: [],
       searchTerms: "",
     };
   }
@@ -33,8 +34,11 @@ class Search extends Component {
           syn: data.results[0].overview,
           vote: data.results[0].vote_average,
           poster: data.results[0].poster_path,
+          releaseDate: data.results[0].release_date,
           submitted: true,
         });
+        console.log("Data returned", data);
+
         // console.log(`https://api.themoviedb.org/3/search/movie`);
       })
       .catch((error) => {
@@ -51,7 +55,7 @@ class Search extends Component {
   };
 
   render() {
-    const { movie, syn, vote, poster, submitted } = this.state;
+    const { movie, syn, vote, poster, submitted, releaseDate } = this.state;
     return (
       <>
         <Navbar />
@@ -71,7 +75,13 @@ class Search extends Component {
           </form>
         </div>
         {submitted && (
-          <SearchMovie movie={movie} syn={syn} vote={vote} poster={poster} />
+          <SearchMovie
+            movie={movie}
+            syn={syn}
+            vote={vote}
+            poster={poster}
+            release={releaseDate}
+          />
         )}
       </>
     );
