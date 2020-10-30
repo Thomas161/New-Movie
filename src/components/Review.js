@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import MovieCard from "./MovieCard";
 import ls from "local-storage";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Redirect } from "react-router-dom";
 import fire from "../backend/fire";
 import "../css/Review.css";
 // import Search from "./Search";
@@ -51,6 +51,7 @@ class Review extends Component {
     });
 
     console.log("Submitted to firebase", this.state.publisher, this.state.body);
+    // return <Redirect to="/submitted" />;
   };
 
   render() {
@@ -82,6 +83,7 @@ class Review extends Component {
                     className="btn btn-warning"
                     value="Submit"
                     disabled={!this.isFilled()}
+                    onReset={() => <Redirect to="/submitted" />}
                   />
                 </span>
               </div>
@@ -102,7 +104,9 @@ class Review extends Component {
           >
             RETURN TO HOME
           </Link> */}
-
+          {/* <Switch>
+            <Route component={MovieCard} exact path="/submitted" />
+          </Switch> */}
           {submitted && <MovieCard publisher={publisher} body={body} />}
         </>
       </Router>
