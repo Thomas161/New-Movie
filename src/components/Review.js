@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import MovieCard from "./MovieCard";
 import ls from "local-storage";
-import { Link, Router } from "react-router-dom";
+import { Link, BrowserRouter as Router } from "react-router-dom";
 import fire from "../backend/fire";
 import "../css/Review.css";
 
@@ -11,22 +11,19 @@ class Review extends Component {
     this.state = {
       publisher: "",
       body: "",
-      submitted: false
+      submitted: false,
     };
   }
 
   componentWillMount() {
     //creates a variable with a database collection i.e. ('newReviews');
-    fire
-      .database()
-      .ref("newReviews")
-      .orderByKey();
+    fire.database().ref("newReviews").orderByKey();
   }
 
-  handleChange = event => {
+  handleChange = (event) => {
     event.preventDefault();
     this.setState({
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     });
   };
 
@@ -34,12 +31,12 @@ class Review extends Component {
     return this.state.body !== "" && this.state.publisher !== "";
   };
 
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault();
     this.setState({
       publisher: this.state.publisher,
       body: this.state.body,
-      submitted: true
+      submitted: true,
     });
 
     //set key and value pairs into localstorage
@@ -47,14 +44,10 @@ class Review extends Component {
     ls.set("body", JSON.stringify(this.state.body));
 
     //setting up firebase to push new state objects into collection
-    fire
-      .database()
-      .ref("newReviews")
-      .push()
-      .set({
-        publisher: this.state.publisher,
-        body: this.state.body
-      });
+    fire.database().ref("newReviews").push().set({
+      publisher: this.state.publisher,
+      body: this.state.body,
+    });
 
     console.log("Submitted to firebase", this.state.publisher, this.state.body);
   };
@@ -100,7 +93,7 @@ class Review extends Component {
                       fontSize: "2em",
                       fontWeight: "bolder",
                       backgroundColor: "white",
-                      padding: "20px"
+                      padding: "20px",
                     }}
                   >
                     RETURN TO HOME

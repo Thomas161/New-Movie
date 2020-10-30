@@ -23,7 +23,7 @@
   background-color: darkorange;
   font-family: "Barrio", cursive;
   height: 60px;
-  top: 20px;
+  padding: 15px;
 }
 #synopsis {
   font-size: 12px;

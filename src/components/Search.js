@@ -10,6 +10,7 @@ class Search extends Component {
     super(props);
     this.state = {
       submitted: false,
+
       movie: [],
       syn: [],
       vote: [],
