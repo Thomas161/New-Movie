@@ -4,6 +4,7 @@ import ls from "local-storage";
 import { Link, BrowserRouter as Router } from "react-router-dom";
 import fire from "../backend/fire";
 import "../css/Review.css";
+// import Search from "./Search";
 
 class Review extends Component {
   constructor(props) {
@@ -52,11 +53,19 @@ class Review extends Component {
     console.log("Submitted to firebase", this.state.publisher, this.state.body);
   };
 
+  // hideComp = e => {
+  //   e.preventDefault();
+  //   this.setState({
+  //     hideComp:true
+  //   })
+  // }
+
   render() {
     const { publisher, body, submitted } = this.state;
 
     return (
       <Router>
+        {/* <Search style="display:none" /> */}
         <>
           <div>
             <br />
@@ -85,15 +94,18 @@ class Review extends Component {
                     value="Submit"
                     disabled={!this.isFilled()}
                   />
+                  <br />
 
                   <Link
-                    to="/"
+                    to={{ pathname: "/" }}
                     alt="home"
                     style={{
-                      fontSize: "2em",
-                      fontWeight: "bolder",
-                      backgroundColor: "white",
-                      padding: "20px",
+                      fontSize: "12px",
+                      fontWeight: "lighter",
+                      backgroundColor: "#4c9f93",
+                      padding: "5px",
+                      border: "solid 3px red",
+                      color: "white",
                     }}
                   >
                     RETURN TO HOME

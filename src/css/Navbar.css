@@ -8,7 +8,7 @@ nav {
 }
 
 #theMovieDbImage {
-  width: 200px;
+  width: 140px;
   height: 80px;
   top: 20px;
   left: 0px;
@@ -18,10 +18,21 @@ nav {
 }
 #reviewHeader {
   font-family: "Slackey", cursive;
-  font-size: 25px;
+  font-size: 20px;
   top: 26px;
-  left: 30px;
-  line-height: 33px;
+  /* left: 30px; */
+  line-height: 31px;
+  text-align: center;
+  padding: 5px;
+}
+#searchHeader {
+  font-family: "Slackey", cursive;
+  font-size: 20px;
+  /* top: 35px; */
+  text-align: center;
+  /* left: 30px; */
+  line-height: 30px;
+  padding: 5px;
 }
 #movieSearchApp {
   color: #fff;
@@ -36,6 +47,7 @@ nav {
 } */
 nav,
 #reviewHeader,
+#searchHeader,
 #theMovieDbLink,
 #theMovieDbImage {
   position: relative;

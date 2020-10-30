@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Review from "./Review";
+import Search from "./Search";
 import moviedb from "../images/moviedb.png";
 import "../css/Navbar.css";
 
@@ -16,15 +17,22 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <Link to="/review">
+              <Link to={{ pathname: "/review" }}>
                 <div id="reviewHeader">Wanna Write a Review?</div>
+              </Link>
+            </li>
+            <li>
+              {" "}
+              <Link to={{ pathname: "/search" }}>
+                <div id="searchHeader">Search Movie</div>
               </Link>
             </li>
           </ul>
           <div id="movieSearchApp">Movie Search App</div>
         </nav>
         <Switch>
-          <Route path="/review" component={Review} />
+          <Route component={Search} exact path="/search" />
+          <Route exact path="/review" component={Review} />
         </Switch>
       </div>
     </Router>
