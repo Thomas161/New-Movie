@@ -9,13 +9,12 @@ const Navbar = () => {
     <Router>
       <div>
         <nav className="nav navbar-default bg-dark">
-          <ul>
-            <li id="listItemMovieDb">
+          <ul id="listItems">
+            <li>
               <a href="https://www.themoviedb.org/" id="theMovieDbLink">
                 <img src={moviedb} alt="the_movie_db" id="theMovieDbImage" />
               </a>
             </li>
-
             <li>
               <Link to="/review">
                 <h2 id="reviewHeader">Wanna Write a Review?</h2>
