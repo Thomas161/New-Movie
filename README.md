@@ -1,10 +1,8 @@
 [![NPM](https://nodei.co/npm/npm.png)](https://nodei.co/npm/npm/)
-[![React](https://raw.githubusercontent.com/jalbertsr/logo-badge-images/master/img/react_logo.png)](https://facebook.github.io/react/)
+[![firebase](https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-128.png)](https://firebase.google.com/)
 [![CircleCI](https://circleci.com/gh/Thomas161/New-Movie/tree/prime.svg?style=svg)](https://circleci.com/gh/Thomas161/New-Movie/tree/prime)
 
 # New-Movie
-
-**Reactjs/Firebase DB cloud platform/Jest Testing/Integration Testing/Heroku deployment**
 
 It consumes an API via the themoviedatabase that allows the user to query movies, and thus rendering movie information to the frontend from the backend.
 
