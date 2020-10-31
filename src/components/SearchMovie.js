@@ -3,7 +3,6 @@ import "../css/SearchMovie.css";
 
 const SearchMovie = ({ movie, syn, vote, poster, release }) => {
   return (
-    // <SearchMovieGridLayout>
     <div className="grid-container">
       <h2 id="title">{movie}</h2>
       <p id="synopsis">{syn}</p>
@@ -15,7 +14,6 @@ const SearchMovie = ({ movie, syn, vote, poster, release }) => {
         alt=""
       />
     </div>
-    // </SearchMovieGridLayout>
   );
 };
 export default SearchMovie;

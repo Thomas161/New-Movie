@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import SearchMovie from "./SearchMovie";
 import "../css/Search.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
+
 require("dotenv").config();
 
 class Search extends Component {
@@ -38,8 +38,6 @@ class Search extends Component {
           submitted: true,
         });
         console.log("Data returned", data);
-
-        // console.log(`https://api.themoviedb.org/3/search/movie`);
       })
       .catch((error) => {
         console.error("Error message ", error);
