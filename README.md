@@ -1,13 +1,8 @@
 [![NPM version](https://badge.fury.io/js/esta.svg)](http://badge.fury.io/js/esta)
 [![CircleCI](https://circleci.com/gh/Thomas161/New-Movie/tree/prime.svg?style=svg)](https://circleci.com/gh/Thomas161/New-Movie/tree/prime)
 
-<<<<<<< HEAD
 [React](https://logos-download.com/wp-content/uploads/2016/09/React_logo_small.png)
-[![firebase](https://icon2.cleanpng.com/20180426/rwq/kisspng-firebase-cloud-messaging-google-developers-softwar-5ae1d9fd416102.1403209115247508452678.jpg)](https://firebase.google.com/)
-=======
-![React](https://logos-download.com/wp-content/uploads/2016/09/React_logo_small.png)
-[![firebase](https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-128.png)](https://firebase.google.com/)
->>>>>>> d9bcb89518f31ed6f27db0b4b14b1ca06da04f50
+[![firebase](https://firebase.google.com/images/brand-guidelines/logo-built_black.png)](https://firebase.google.com/)
 
 # Movie Search SPA
 
