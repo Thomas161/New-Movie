@@ -1,15 +1,68 @@
-.container {
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap");
+
+.containerCard {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: springgreen;
+  top: 30%;
+  left: 60%;
+  transform: translate(0%, -10%);
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+}
+.movieCard {
+  position: absolute;
+  top: 16%;
+  left: 0%;
+  transform: translate(0%, -10%);
+  width: 200px;
+  height: 250px;
+  background: #dcdcdc;
 }
 
-p {
-  color: rgb(201, 182, 182);
+#lead {
+  color: #000;
+  font-size: 14px;
+  padding: 2px;
+  font-family: "Dancing Script", cursive;
+  text-overflow: ellipsis;
+}
+#reviewDate {
+  color: #000;
+  font-size: 9px;
+  padding: 2px;
 }
 
-h5 {
-  font-size: 16px;
+#publisher {
+  font-family: "Lobster", cursive;
+  font-size: 18px;
+  padding: 2px;
+  text-overflow: ellipsis;
+}
+.flipCardInner {
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.movieCard:hover .flipCardInner {
+  transform: rotateY(180deg);
+}
+.flipCardFront,
+.flipCardBack {
+  position: absolute;
+  backface-visibility: hidden;
+}
+.flipCardFront {
+  background-color: #bbb;
+
+  color: black;
+}
+.flipCardBack {
+  background-color: dodgerblue;
+  transform: rotateY(180deg);
+}
+img {
+  justify-content: center;
+  width: 120px;
+  height: 170px;
 }

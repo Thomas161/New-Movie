@@ -80,7 +80,6 @@ class Review extends Component {
                 <span>
                   <input
                     type="submit"
-                    className="btn btn-warning"
                     value="Submit"
                     disabled={!this.isFilled()}
                     onReset={() => <Redirect to="/submitted" />}
@@ -90,23 +89,6 @@ class Review extends Component {
             </form>
           </div>
 
-          {/* <Link
-            to={{ pathname: "/" }}
-            alt="home"
-            style={{
-              fontSize: "12px",
-              fontWeight: "lighter",
-              backgroundColor: "#4c9f93",
-              padding: "5px",
-              border: "solid 3px red",
-              color: "white",
-            }}
-          >
-            RETURN TO HOME
-          </Link> */}
-          {/* <Switch>
-            <Route component={MovieCard} exact path="/submitted" />
-          </Switch> */}
           {submitted && <MovieCard publisher={publisher} body={body} />}
         </>
       </Router>
