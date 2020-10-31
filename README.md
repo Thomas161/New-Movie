@@ -1,7 +1,7 @@
 [![NPM version](https://badge.fury.io/js/esta.svg)](http://badge.fury.io/js/esta)
 [![CircleCI](https://circleci.com/gh/Thomas161/New-Movie/tree/prime.svg?style=svg)](https://circleci.com/gh/Thomas161/New-Movie/tree/prime)
 
-[React](https://logos-download.com/wp-content/uploads/2016/09/React_logo_small.png)
+![React](https://logos-download.com/wp-content/uploads/2016/09/React_logo_small.png)
 [![firebase](https://firebase.google.com/images/brand-guidelines/logo-built_black.png)](https://firebase.google.com/)
 
 # Movie Search SPA
