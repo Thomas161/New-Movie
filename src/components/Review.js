@@ -4,7 +4,7 @@ import ls from "local-storage";
 import { BrowserRouter as Router, Redirect } from "react-router-dom";
 import fire from "../backend/fire";
 import "../css/Review.css";
-// import Search from "./Search";
+// import { database } from "firebase";
 
 class Review extends Component {
   constructor(props) {
@@ -51,7 +51,17 @@ class Review extends Component {
     });
 
     console.log("Submitted to firebase", this.state.publisher, this.state.body);
-    // return <Redirect to="/submitted" />;
+
+    //all children added once form submitted
+    fire
+      .database()
+      .ref("newReviews")
+      .on("child_added", function (snapshot, prevChildKey) {
+        let newPost = snapshot.val();
+        console.log("Publisher :" + newPost.publisher);
+        console.log("Body :" + newPost.body);
+        console.log("ID :" + prevChildKey);
+      });
   };
 
   render() {

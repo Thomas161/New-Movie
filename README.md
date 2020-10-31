@@ -1,5 +1,5 @@
 [![NPM](https://nodei.co/npm/npm.png)](https://nodei.co/npm/npm/)
-
+[![React](https://raw.githubusercontent.com/jalbertsr/logo-badge-images/master/img/react_logo.png)](https://facebook.github.io/react/)
 [![CircleCI](https://circleci.com/gh/Thomas161/New-Movie/tree/prime.svg?style=svg)](https://circleci.com/gh/Thomas161/New-Movie/tree/prime)
 
 # New-Movie
@@ -29,18 +29,15 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ## Tools and Attributions
 
-### TheMovieDatabase
-
+**TheMovieDatabase**
 API data provided via themoviedatabase, accessed through a key
 https://www.themoviedb.org/
 
-## Backend
-
+**Backend**
 Database used for project uses the cloud platform Firebase
 https://console.firebase.google.com/
 
-## Testing/Build
-
+**Testing/Build**
 Testing achieved via React Scripts (create react app) and Continuous integration completed using CircleCI build tool.
 https://circleci.com/
 
