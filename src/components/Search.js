@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import SearchMovie from "./SearchMovie";
 import "../css/Search.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 require("dotenv").config();
 
 class Search extends Component {
@@ -59,18 +59,15 @@ class Search extends Component {
     return (
       <>
         <div id="formContainer">
-          <form action="" onSubmit={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit}>
             <input
               placeholder="Select Movie..."
               type="text"
               onChange={this.handleChange}
             />
             <br />
-            <input
-              type="submit"
-              className="btn btn-dark"
-              value="Search Movie"
-            />
+            <br />
+            <input id="submitSearchForm" type="submit" value="Search Movie" />
           </form>
         </div>
         {submitted && (

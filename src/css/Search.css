@@ -1,11 +1,13 @@
 #formContainer {
   position: fixed;
-  left: 50%;
-  top: 50%;
+  left: 18%;
+  top: 30%;
   transform: translate(-50%, -50%);
   background-color: bisque;
   box-shadow: 40px -16px teal;
   border-radius: 12px;
+  width: 310px;
+  height: 115px;
 }
 input[type="text"] {
   width: 200px;
@@ -13,10 +15,16 @@ input[type="text"] {
 
   font-weight: lighter;
   position: relative;
-  left: 0px;
+  left: 10px;
+  top: 10px;
+  padding: 5px;
 }
 
-.btn-dark {
-  height: 40px;
+#submitSearchForm {
+  text-align: center;
+  position: relative;
+  font-size: 10px;
+  height: 20px;
   width: 120px;
+  left: 10px;
 }

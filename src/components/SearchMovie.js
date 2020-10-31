@@ -1,12 +1,6 @@
 import React from "react";
 import "../css/SearchMovie.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
 
-// const SearchMovieGridLayout = `
-// display:grid;
-// padding: 20px;
-// grid-template-columns: 1fr 1fr;
-// `;
 const SearchMovie = ({ movie, syn, vote, poster, release }) => {
   return (
     // <SearchMovieGridLayout>
