@@ -1,7 +1,11 @@
 [![NPM version](https://badge.fury.io/js/esta.svg)](http://badge.fury.io/js/esta)
 [![CircleCI](https://circleci.com/gh/Thomas161/New-Movie/tree/prime.svg?style=svg)](https://circleci.com/gh/Thomas161/New-Movie/tree/prime)
 
+<<<<<<< HEAD
 [React](https://logos-download.com/wp-content/uploads/2016/09/React_logo_small.png)
+=======
+[![React](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/320px-React-icon.svg.png)
+>>>>>>> 0643687fb2fc4cc37c618a2ace493ef662600317
 [![firebase](https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-128.png)](https://firebase.google.com/)
 
 # New-Movie
