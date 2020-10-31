@@ -1,4 +1,4 @@
-[![NPM version](https://badge.fury.io/js/esta.svg)](http://badge.fury.io/js/esta)
+[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
 [![CircleCI](https://circleci.com/gh/Thomas161/New-Movie/tree/prime.svg?style=svg)](https://circleci.com/gh/Thomas161/New-Movie/tree/prime)
 
 ![React](https://logos-download.com/wp-content/uploads/2016/09/React_logo_small.png)

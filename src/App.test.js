@@ -5,9 +5,6 @@ import Enzyme, { shallow, mount } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import Search from "../src/components/Search";
 import SearchMovie from "../src/components/SearchMovie";
-// import Review from "./components/Review";
-// import Navbar from "../src/components/Navbar";
-// import MovieCard from "../src/components/MovieCard";
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -23,12 +20,3 @@ describe("First 3 components render", () => {
     expect(wrapper).toBeDefined();
   });
 });
-
-// describe('other components render',()=> {
-//     it('Review',()=> {
-//     render(<Review/>);
-//   });
-// it('Navbar', () => {
-//   render(<Navbar />);
-// });
-// })
