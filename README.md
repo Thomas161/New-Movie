@@ -1,6 +1,9 @@
 [![NPM version](https://badge.fury.io/js/esta.svg)](http://badge.fury.io/js/esta)
 [![CircleCI](https://circleci.com/gh/Thomas161/New-Movie/tree/prime.svg?style=svg)](https://circleci.com/gh/Thomas161/New-Movie/tree/prime)
 
+[React](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/320px-React-icon.svg.png)
+[![firebase](https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-128.png)](https://firebase.google.com/)
+
 # New-Movie
 
 It consumes an API via the themoviedatabase that allows the user to query movies, and thus rendering movie information to the frontend from the backend.
@@ -33,7 +36,6 @@ https://www.themoviedb.org/
 **Backend** =>
 Database used for project uses the cloud platform Firebase
 https://console.firebase.google.com/
-[![firebase](https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-128.png)](https://firebase.google.com/)
 
 **Testing/Build** =>
 Testing achieved via React Scripts (create react app) and Continuous integration completed using CircleCI build tool.
