@@ -4,7 +4,7 @@
 [![React](https://logos-download.com/wp-content/uploads/2016/09/React_logo_small.png)
 [![firebase](https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-128.png)](https://firebase.google.com/)
 
-# New-Movie
+# Movie Search SPA
 
 It consumes an API via the themoviedatabase that allows the user to query movies, and thus rendering movie information to the frontend from the backend.
 
