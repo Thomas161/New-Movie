@@ -30,8 +30,10 @@
   left: 9px;
   top: 60px;
   border: solid slategray 3px;
+  word-break: break-all;
 }
 #submitReview {
+  word-break: break-all;
   position: absolute;
   width: 100px;
   height: 40px;
