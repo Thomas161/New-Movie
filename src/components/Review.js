@@ -62,6 +62,7 @@ class Review extends Component {
         console.log("Body :" + newPost.body);
         console.log("ID :" + prevChildKey);
       });
+    event.target.reset();
   };
 
   render() {
@@ -72,30 +73,27 @@ class Review extends Component {
         <>
           <div id="formContainerReview">
             <form onSubmit={this.handleSubmit} id="formControl">
-              <div id="innerForm">
-                <input
-                  className="form-control"
-                  type="text"
-                  placeholder="Title"
-                  name="publisher"
-                  onChange={this.handleChange}
-                />
+              <input
+                id="inputTitle"
+                type="text"
+                placeholder="Title"
+                name="publisher"
+                onChange={this.handleChange}
+              />
 
-                <textarea
-                  placeholder="Review..."
-                  name="body"
-                  onChange={this.handleChange}
-                ></textarea>
+              <textarea
+                id="inputReviewBody"
+                placeholder="Review..."
+                name="body"
+                onChange={this.handleChange}
+              ></textarea>
 
-                <span>
-                  <input
-                    type="submit"
-                    value="Submit"
-                    disabled={!this.isFilled()}
-                    onReset={() => <Redirect to="/submitted" />}
-                  />
-                </span>
-              </div>
+              <input
+                id="submitReview"
+                type="submit"
+                value="Submit"
+                disabled={!this.isFilled()}
+              />
             </form>
           </div>
 

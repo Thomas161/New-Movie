@@ -4,18 +4,26 @@
   transform: translate(-50%, -50%);
   position: absolute;
   background: linear-gradient(#833ab4, #1dfddb, #fcb045);
-  width: 540px;
+  width: 395px;
   height: 380px;
 }
 
-input[type="text"] {
+#formControl {
+  position: absolute;
+  left: 57%;
+  top: 54%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 380px;
+}
+#inputTitle {
   position: absolute;
   width: 80%;
   height: 30px;
-
+  left: 9px;
   border: solid slategray 3px;
 }
-textarea {
+#inputReviewBody {
   position: absolute;
   width: 80%;
   height: 200px;
@@ -23,7 +31,7 @@ textarea {
   top: 60px;
   border: solid slategray 3px;
 }
-input[type="submit"] {
+#submitReview {
   position: absolute;
   width: 100px;
   height: 40px;
