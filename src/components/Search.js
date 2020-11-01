@@ -59,11 +59,12 @@ class Search extends Component {
         <div id="formContainer">
           <form onSubmit={this.handleSubmit}>
             <input
+              id="inputMovie"
               placeholder="Select Movie..."
               type="text"
               onChange={this.handleChange}
             />
-            <br />
+
             <br />
             <input id="submitSearchForm" type="submit" value="Search Movie" />
           </form>

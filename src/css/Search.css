@@ -1,7 +1,7 @@
 #formContainer {
-  position: fixed;
+  position: absolute;
   left: 18%;
-  top: 30%;
+  top: 42%;
   transform: translate(-50%, -50%);
   background-color: bisque;
   box-shadow: 40px -16px teal;
@@ -9,20 +9,27 @@
   width: 310px;
   height: 115px;
 }
-input[type="text"] {
+form {
+  position: absolute;
+  left: 51%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 100px;
+}
+#inputMovie {
   width: 200px;
   height: 40px;
 
   font-weight: lighter;
-  position: relative;
+  position: sticky;
   left: 10px;
-  top: 10px;
+  top: 0px;
   padding: 5px;
 }
 
 #submitSearchForm {
-  text-align: center;
-  position: relative;
+  position: sticky;
   font-size: 10px;
   height: 20px;
   width: 120px;
