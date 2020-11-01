@@ -5,6 +5,9 @@ nav {
   height: 110px;
   padding: 0;
   margin: 0;
+  background: url("../images/cinema2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #theMovieDbImage {
@@ -12,9 +15,7 @@ nav {
   height: 80px;
   /* text-align: center; */
 }
-/* #theMovieDbImage:hover {
-  transform: scale(1.08);
-} */
+
 #reviewHeader {
   font-family: "Slackey", cursive;
   font-size: 20px;
@@ -26,13 +27,23 @@ nav {
   text-align: center;
 }
 #movieSearchApp {
-  color: #fff;
+  color: transparent;
   position: relative;
   font-family: "Eater", cursive;
   font-size: 45px;
   left: 100px;
   top: 20px;
+  background-position: 0 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: text-shadow 0.35s linear;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
 }
+#movieSearchApp:hover {
+  text-shadow: 0 0 10px rgba(221, 221, 221, 1), 0 0 0 #ddd;
+}
+
 /* #reviewHeader:hover {
   text-decoration: underline solid 3px gold;
 } */

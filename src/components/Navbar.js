@@ -28,6 +28,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+
           <div id="movieSearchApp">Movie Search App</div>
         </nav>
         <Switch>
