@@ -3,12 +3,14 @@ import ReactDOM from "react-dom";
 import "../src/css/index.css";
 import App from "./App";
 import { BrowserRouter, Route } from "react-router-dom";
+
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <BrowserRouter>
     <Route component={App} exact path="/" />
   </BrowserRouter>,
+
   document.getElementById("root")
 );
 

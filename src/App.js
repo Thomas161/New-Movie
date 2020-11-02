@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import Search from "../src/components/Search";
-import Review from "../src/components/Review";
-import Navbar from "../src/components/Navbar";
-import Footer from "../src/components/Footer";
-import FacebookLogin from "../src/components/FacebookLogin";
+import Search from "./components/Search";
+import Review from "./components/Review";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 
@@ -12,7 +11,6 @@ class App extends Component {
     return (
       <>
         <Router>
-          <FacebookLogin />
           <div>
             <Navbar />
             <Switch>
