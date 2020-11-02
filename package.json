@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Thomas161.github.io/New-Movie",
   "name": "movie-app-2",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +18,8 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom"
@@ -37,6 +40,7 @@
     "css-loader": "^2.1.1",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
+    "gh-pages": "^3.1.0",
     "mini-css-extract-plugin": "^0.6.0",
     "react-testing-library": "^6.1.2"
   }

@@ -10,13 +10,11 @@
     "poster  synopsis "
     "rating release ";
   grid-gap: 10px;
-  column-gap: maroon 2px;
-  row-gap: gold 2px;
   width: 450px;
   height: 100%;
   left: 10%;
   top: 50%;
-  transform: translate(500px, 180px);
+  transform: translate(500px, 62px);
   background-color: linear-gradient(#f3904f, 3b4371);
 }
 #title {
