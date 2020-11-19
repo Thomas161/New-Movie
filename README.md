@@ -6,42 +6,32 @@
 
 # Movie Search SPA
 
+:movie_camera: :clapper:
+
+**Check me out**
+https://my-movies-5080b.web.app/
+
 It consumes an API via the themoviedatabase that allows the user to query movies, and thus rendering movie information to the frontend from the backend.
 
 It also submits a movie review via user data inserted via a form that is sent to a backend database (firebase).
 
-## Available Scripts
+### Installation
 
-In the project directory, you can run:
+`npm install`
 
-### `npm start`
+### React App Scripts
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`npm run start` Runs the app in the development mode.
+`npm run test` Launches the test runner in the interactive watch mode.
+`npm run build` build out for production/deployment
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+#### Tools and Attributions
 
-### `npm test`
+- **TheMovieDatabase** => https://www.themoviedb.org/
+- **Realtime DB** => https://console.firebase.google.com/
+- **Build Tool** => https://circleci.com/
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-## Tools and Attributions
-
-**TheMovieDatabase** =>
-API data provided via themoviedatabase, accessed through a key
-https://www.themoviedb.org/
-
-**Backend** =>
-Database used for project uses the cloud platform Firebase
-https://console.firebase.google.com/
-
-**Testing/Build** =>
-Testing achieved via React Scripts (create react app) and Continuous integration completed using CircleCI build tool.
-https://circleci.com/
-
-### config.yml
+#### config.yml
 
 ```python
 version: 2
