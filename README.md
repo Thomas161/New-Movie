@@ -21,8 +21,8 @@ It also submits a movie review via user data inserted via a form that is sent to
 
 ### React App Scripts
 
-`npm run start` Runs the app in the development mode.
-`npm run test` Launches the test runner in the interactive watch mode.
+`npm run start` Runs the app in the development mode.<br>
+`npm run test` Launches the test runner in the interactive watch mode.<br>
 `npm run build` build out for production/deployment
 
 #### Tools and Attributions
